@@ -1,4 +1,0 @@
-goto_market:
-    - by: xpath
-      locator: "//*[@resource-id='android:id/tabs']//*[@text='行情']"
-      action: click
