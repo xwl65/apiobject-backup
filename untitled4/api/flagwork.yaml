@@ -1,0 +1,34 @@
+create:
+  "method": "post"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/create?access_token=${token}"
+
+  "json":
+      "tagname": ${tagname}
+      "tagid":   ${tagid}
+
+get:
+  "method": "get"
+
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/get?access_token=${token}"
+
+  "json":
+      "tagid":   ${tagid}
+
+delete:
+  "method": "post"
+
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/deltagusers?access_token=${token}"
+
+  "json":
+      "tagid":   ${tagid}
+      "userlist":
+        -  ${userlist}
+      "partylist":
+        -  ${partylist}
+update:
+  "method": "post"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/tag/update?access_token=${token}"
+
+  "json":
+      "tagname": ${tagname}
+      "tagid":   ${tagid}
